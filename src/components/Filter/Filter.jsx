@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Div, Label, Input } from './Filter.styled';
 
-function Filter({ value, onChangeFilter }) {
+const Filter = ({ value, onChangeFilter }) => {
   return (
     <Div>
       <Label>
@@ -11,7 +11,7 @@ function Filter({ value, onChangeFilter }) {
       </Label>
     </Div>
   );
-}
+};
 
 Filter.propTypes = {
   value: PropTypes.string.isRequired,
